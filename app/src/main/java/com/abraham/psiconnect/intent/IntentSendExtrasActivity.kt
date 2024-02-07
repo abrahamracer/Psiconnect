@@ -18,7 +18,7 @@ class IntentSendExtrasActivity : AppCompatActivity() {
         btSendExtras.setOnClickListener {
             val sendIntent = Intent(this,IntentRecieveExtrasActivity::class.java).apply {
                 putExtra("EXTRA_NAME","Abraham")
-                putExtra("EXTRA_LAST_NAME","Valderrabano")
+                putExtra("EXTRA_LAST_NAME","Valderrabano Vega")
                 putExtra("EXTRA_AGE",24)
                 putExtra("EXTRA_IS_MARRIED",false)
                 putExtra("EXTRA_PERSON",Persona("ABRAHAM","AVV"))

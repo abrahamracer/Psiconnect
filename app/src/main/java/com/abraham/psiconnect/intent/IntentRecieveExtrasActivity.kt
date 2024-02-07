@@ -14,13 +14,13 @@ class IntentRecieveExtrasActivity : AppCompatActivity() {
         setContentView(R.layout.activity_intent_recieve_extras)
 
         val name = intent.getStringExtra("EXTRA_NAME")
-        val lastName=intent.getStringExtra("EXTRA_LASTNAME")
+        val lastName=intent.getStringExtra("EXTRA_LAST_NAME")
         val age= intent.getIntExtra("EXTRA_AGE",0)
         val married=intent.getBooleanExtra("EXTRA_IS_MARRIED",false)
         val persona=if(Build.VERSION.SDK_INT >=Build.VERSION_CODES.TIRAMISU){
-            intent.getSerializableExtra("EXRA_PERSON",Persona::class.java)
+            intent.getSerializableExtra("EXTRA_PERSON",Persona::class.java)
         }else{
-            intent.getSerializableExtra("EXRA_PERSON") as Persona
+            intent.getSerializableExtra("EXTRA_PERSON") as Persona
         }
 
         val tvInfo = findViewById<TextView>(R.id.tv_info)
