@@ -13,24 +13,42 @@
         android:theme="@style/Theme.Psiconnect"
         tools:targetApi="31">
         <activity
-            android:name=".intent.IntentRecieveExtrasActivity"
+            android:name=".componentesgraficos.recycledview.RecycledViewActivity"
             android:exported="false" />
         <activity
-            android:name=".intent.IntentSendExtrasActivity"
-            android:exported="false"/>
-
-        <activity
-            android:name=".intent.IntentImplicitoActivity"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity"
-            android:exported="true" >
+            android:name=".componentesgraficos.ComponentSelectionActivity"
+            android:exported="true">
         <intent-filter>
             <action android:name="android.intent.action.MAIN" />
 
             <category android:name="android.intent.category.LAUNCHER" />
         </intent-filter>
-    </activity>
+        </activity>
+        <activity
+            android:name=".componentesgraficos.ConstraintLayoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".componentesgraficos.RelativeLayoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".componentesgraficos.LinearLayoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".componentesgraficos.FrameLayoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".intent.IntentRecieveExtrasActivity"
+            android:exported="false" />
+        <activity
+            android:name=".intent.IntentSendExtrasActivity"
+            android:exported="false" />
+        <activity
+            android:name=".intent.IntentImplicitoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"/>
+
     </application>
 
 </manifest>
